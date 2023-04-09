@@ -4,7 +4,9 @@
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: lightblue;
+    background-color:beige ;
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
  
   }
   
@@ -53,12 +55,23 @@
   }
 
   #weather-results{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  #clima-results{
+    color: black;
     font-size: 30px;
     font-weight: bold;
+    padding: 10px;
+  }
+  #clima-results{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .containerResult{
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    
+    
   }
 
 

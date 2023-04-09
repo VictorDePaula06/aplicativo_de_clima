@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" />
-
     <title>Qual o clima ? </title>
 </head>
 <body>
@@ -15,10 +13,12 @@
         <input type="text" id="city-input" placeholder="Digite o nome da cidade">
         <button id="get-weather-button">Obter Previsão</button>
         <div id="weather-results"></div>
-        <div id="clima-results"></div>
-        <img id="weather-image" src="" alt="">
-        <div id="error-message"></div>
-      </div>
+            <div class="containerResult">
+                <div id="clima-results"></div>
+                <img id="weather-image" src="" alt="">
+                <div id="error-message"></div>
+            </div>
+    </div>
 
 
     <script src="script.js"></script>

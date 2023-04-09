@@ -26,14 +26,23 @@ const getWeather = () => {
       
         // Lógica para mudar a imagem de fundo ou exibir um ícone de chuva
         const container = document.querySelector(".container");
-        if (temperature < 0) {
+        const containerResults = document.querySelector(".containerResult");
+        if (temperature <= 0) {
             imageResults.src = "./imgs/snowing.png"
+            containerResults.style.backgroundImage = "url('./imgs/backNeve.jpg')"
+            container.style.backgroundColor = "snow"
         } else if (temperature > 0 && temperature <= 20.00) {
             imageResults.src = "./imgs/rain.png";
+            container.style.backgroundColor = "#264da3"
+            containerResults.style.backgroundImage = "url('./imgs/backRain.jpg')"
         } else if(temperature > 20.00 && temperature <= 30){
             imageResults.src = "./imgs/cloud.png";
+            containerResults.style.backgroundImage = "url('./imgs/backOutono.jpg')"
+            container.style.backgroundColor = "#646d75"
         }else{
             imageResults.src = "./imgs/sun.png"
+            containerResults.style.backgroundImage = "url('./imgs/backSun.jpg')"
+            container.style.backgroundColor = "#87ceeb"
         }
       })
       
