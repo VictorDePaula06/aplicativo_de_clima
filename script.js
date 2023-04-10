@@ -28,21 +28,26 @@ const getWeather = () => {
         const container = document.querySelector(".container");
         const containerResults = document.querySelector(".containerResult");
         if (temperature <= 0) {
+          //neve
             imageResults.src = "./imgs/snowing.png"
-            containerResults.style.backgroundImage = "url('./imgs/backNeve.jpg')"
-            container.style.backgroundColor = "snow"
-        } else if (temperature > 0 && temperature <= 20.00) {
+            container.style.backgroundImage = "url('./imgs/backNeve3.jpg')"
+        } else if (temperature > 0 && temperature <= 10.00){
+          //chuva
             imageResults.src = "./imgs/rain.png";
-            container.style.backgroundColor = "#264da3"
-            containerResults.style.backgroundImage = "url('./imgs/backRain.jpg')"
-        } else if(temperature > 20.00 && temperature <= 30){
+            container.style.backgroundImage = "url('./imgs/backChuva.jpg')"
+        } else if(temperature > 10.00 && temperature <= 20){
+          //frio
             imageResults.src = "./imgs/cloud.png";
-            containerResults.style.backgroundImage = "url('./imgs/backOutono.jpg')"
-            container.style.backgroundColor = "#646d75"
+            container.style.backgroundImage = "url('./imgs/backFrio.jpg')"
+        }else if(temperature > 20 && temperature <= 30){
+          // clima agradavel
+            imageResults.src = "./imgs/nuvens-e-sol.png";
+            container.style.backgroundImage = "url('./imgs/backOutono.jpg')"
         }else{
+          //sol
             imageResults.src = "./imgs/sun.png"
-            containerResults.style.backgroundImage = "url('./imgs/backSun.jpg')"
-            container.style.backgroundColor = "#87ceeb"
+            container.style.backgroundImage = "url('./imgs/backSol.jpg')"
+           
         }
       })
       

@@ -1,24 +1,23 @@
 .container {
-    width: 500px;
-    height: 700px;
-    margin: 0 auto;
+    font-family: 'Unica One', cursive; 
+    width: 400px;
+    margin: auto;
     text-align: center;
     padding: 20px;
     background-color:beige ;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 3px solid darkolivegreen;
     border-radius: 10px;
  
   }
   
   h1 {
+    font-size: 40px;
     margin-bottom: 20px;
   }
-  
-  label {
-   
-    display: block;
-    margin-bottom: 10px;
-  }
+
   
   input[type="text"] {
     padding: 10px;
@@ -49,24 +48,23 @@
     margin-bottom: 20px;
   }
 
-  #weather-image{
-    padding: 10px;
-    margin-top: 10px;
-  }
+
 
   #weather-results{
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     padding: 10px;
   }
   #clima-results{
-    color: black;
-    font-size: 40px;
+    color: g;
+    color: #000000;
+    font-size: 50px;
     font-weight: bold;
   }
 
   .containerResult{
+    /* background-color: rgba(128, 128, 128, 0.575); */
     width: 300px;
     margin: auto;
     border-radius: 10px;
